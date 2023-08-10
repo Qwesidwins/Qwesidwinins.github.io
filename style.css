@@ -1,0 +1,127 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+::selection{
+  color:#000;
+  background:#fff;
+}
+nav{
+ position:fixed;
+ background:#000;
+ width:100%;
+ padding: 10px 0;
+ z-index:12;
+}
+nav .menu{
+  max-width:1250px;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 20px;
+}
+.menu .logo a{
+   text-decoration:none;
+   color:#fff;
+   font-size:35px;
+   font-weight:600;
+   transition: all 0.3s ease;
+}
+.menu ul{
+display:inline-flex;
+}
+.menu ul li{
+ list-style:none;
+ margin-left:7px;
+}
+.menu ul li:first-child{
+  margin-left: 0px;
+}
+.menu ul li a{
+  text-decoration:none;
+  color:#ffff;
+  font-size:18px;
+  font-weight:500;
+  padding:8px 15px;
+  border-radius:5px;
+  trasition: all 0.3s ease;
+}
+.menu ul li a:hover{
+  background:#dac217;
+  color:0000;
+}
+.menu .logo a:hover{
+ -webkit-text-stroke:0.5px #dac217;
+  color:gold;
+  border-radius:100px;
+  margin: 0 0px;
+}
+.img{
+  background: url('img3.jpg')no-repeat;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.img::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #dac217;
+}
+.content{
+     position: absolute;
+     top: 52%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     width: 100%;
+     padding: 0 20px;
+     text-align: center;
+}
+.content .wlcm{
+   color:#ffff;
+   font-size:53px;
+   font-weight:600;
+}
+.content .verse{
+   color:#ffff;
+   font-size:58px;
+   font-weight:605;
+}
+.content .btns{
+  margin-top:20px;
+}
+.content .btns button{
+  height: 55px;
+  width: 170px;
+  border-radius: 100px;
+  border: none;
+  margin: 0 10px;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 10px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease;
+}
+.content .btns button:first-child{
+  color: white;
+  background: black;
+}
+.btns button:first-child:hover{
+  background: white;
+  color: black;
+}
+
+
+
+
+
+
+
